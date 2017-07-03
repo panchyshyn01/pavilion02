@@ -13,6 +13,49 @@ h1, h2, h3 {
     outline: 0;
     outline-offset: 0;
 }
+/*--------Home------------*/
+#home {
+    margin: 0;
+    background-image: url(../images/background-home.jpg);
+    height:670px;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.home-container>h1 {
+    color: #263339; 
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+}
+.home-container>h3 {
+    color: #263339; 
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.button-home-container{
+    display: flex;
+}
+.button-home {
+    width: 50%;
+    margin: 15px 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid #263339;
+    color: #263339;
+    font-size: 20px;
+    text-align: center;
+}
+.button-home:hover {
+    background-color: #263339;
+    color: #fff;
+}
 
 /*--------Service------------*/
 #service {
@@ -23,7 +66,7 @@ h1, h2, h3 {
     text-align: center;
     color: #18313a;
     margin: 0; 
-    padding: 30px;
+    padding: 20px;
 }
 .flex-container-service {
     display: flex;
@@ -90,7 +133,6 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     background: #444444;
-    
 }
 .social-img {
     width: 55px;
@@ -102,6 +144,65 @@ h1, h2, h3 {
     padding: 0 15px;
     margin: 0;
 }
+
+
+/*--------Team------------*/
+#team {
+    margin: 0;
+    background-image: url(../images/background-team.jpg);
+    background-color: #4A423F;
+    background-size:cover;
+    background-position: center center;
+    padding: 10px;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.item-team {
+    margin: 25px;
+    width: 300px; height: 425px;
+    background-color: rgba(255,255,255,.6);
+}
+#team>h2 {
+    font-size: 42px;
+    text-align: center;
+    color: #E2E2E2;
+    margin: 0; 
+    padding: 20px;
+}
+.item-team>h3 {
+    background-color: #263339;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin: 0; 
+    padding: 10px;
+}
+.img-team {
+    width: 300px;
+    margin-bottom: 10px;
+}
+.item-team>p {
+    font-size: 20px;
+    text-align: center;
+    color: #263339;
+    margin: 0; 
+    padding: 10px;
+}
+.social-team {
+    display: flex;
+    justify-content: center;
+}
+.social-icon-team {
+    width: 80px;
+    padding: 0;
+    margin: 5px;
+    
+}
+
 
 /*--------Contact------------*/
 
@@ -115,7 +216,7 @@ h1, h2, h3 {
     text-align: center;
     color: #ffd05b;
     margin: 0; 
-    padding: 30px;
+    padding: 20px;
 }
 .contact {
     display: flex;
@@ -132,10 +233,6 @@ h1, h2, h3 {
     background: #2d464b; 
     border-radius: 5px;
 }
-.item-contact p {
-    font-size: 20px;
-    padding: 5px 15px;
-}
 .item-contact img {
     width: 60px;
     padding: 5px 15px;
@@ -143,12 +240,19 @@ h1, h2, h3 {
 
 .container-contact {
     flex: 1;
-    padding: 15px;
+    padding: 10px;
     color: #fff;
+}
+.container-contact p {
+   font-size: 18px;
+}
+.item-contact p {
+    font-size: 20px;
+    padding: 5px;
 }
 .container-form {
     flex: 1;
-    padding: 15px;
+    padding: 10px;
 }
 
 /*--------form------------*/
@@ -198,6 +302,7 @@ h1, h2, h3 {
 
 
 /*--------madia------------*/
+
 @media screen and (max-width: 1000px){
     #application {width: 300px;}
     .applicationButton {width: 316px;}
@@ -207,6 +312,7 @@ h1, h2, h3 {
     .number {font-size: 45px;}
     .item-container-service p {font-size: 14px;}
 }
+
 @media screen and (max-width: 830px){
     .flex-container-service{flex-direction: column;}
     #statistics-container {flex-direction: column;}
@@ -215,10 +321,29 @@ h1, h2, h3 {
     #application {width: 450px;}
     .applicationButton {width: 466px;}
     #messege {max-width: 450px;}
+    .container-form {padding: 5px;}
+    .container-contact-item {padding: 5px;}
+}
+
+@media screen and (max-width: 600px){
+    .button-home-container {flex-direction:column;}
+    .button-home {width: 100%; margin: 10px 0; padding: 10px 0;}
+    .home-container>h1 {font-size: 65px;}
+    .home-container>h3 {font-size: 23px;}
+    #home {height:550px;}
 }
 @media screen and (max-width: 530px){
     #application {width: 350px;}
     .applicationButton {width: 366px;}
     #messege {max-width: 350px;}
     .item-contact p {font-size: 16px;}
+}
+@media screen and (max-width: 420px){
+    #application {width: 250px;}
+    .applicationButton {width: 266px;}
+    #messege {max-width: 250px;}
+    .item-contact p {font-size: 14px;}
+    .item-contact img  {width: 50px;padding: 5px;}
+    .home-container>h1 {font-size: 55px;}
+    .home-container>h3 {font-size: 19px;}
 }
