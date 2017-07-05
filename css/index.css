@@ -51,7 +51,7 @@ h1, h2, h3 {
     color: #263339;
     font-size: 20px;
     text-align: center;
-    transition: background-color 0.75s;
+    transition: background-color 0.5s;
 }
 .button-home:hover {
     background-color: #263339;
@@ -79,6 +79,7 @@ h1, h2, h3 {
     flex: 1;
     padding: 20px;
     margin-bottom: 10px;
+    transition: background-color 0.5s;
 }
 .item-container-service img {
     border-radius: 50%;
@@ -116,7 +117,7 @@ h1, h2, h3 {
     color: #f1543f;
     font-size: 20px;
     text-align: center;
-    transition: background-color 0.75s;
+    transition: background-color 0.5s;
 }
 .button-service:hover {
     color: #fff;
@@ -238,6 +239,7 @@ h1, h2, h3 {
 #contact {
     background: #263339;
     padding: 10px;
+    padding-bottom: 30px;
    
 }
 #contact h2{
@@ -257,6 +259,7 @@ h1, h2, h3 {
 .item-contact {
     display: flex;
     align-items: center;
+    transition: background-color 0.5s;
 }
 .item-contact:hover {
     background: #2d464b; 
@@ -319,7 +322,7 @@ h1, h2, h3 {
     color: #faac47;
     background-color: #263339;
     font-size: 18px;
-    transition: background-color 0.75s;
+    transition: background-color 0.5s;
 }
 #applicationButton:hover {
     color: #fff;
