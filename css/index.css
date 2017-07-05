@@ -51,6 +51,7 @@ h1, h2, h3 {
     color: #263339;
     font-size: 20px;
     text-align: center;
+    transition: background-color 0.75s;
 }
 .button-home:hover {
     background-color: #263339;
@@ -76,8 +77,8 @@ h1, h2, h3 {
 }
 .item-container-service {
     flex: 1;
-    padding: 25px;
-    margin-bottom: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 .item-container-service img {
     border-radius: 50%;
@@ -97,6 +98,34 @@ h1, h2, h3 {
 .item-container-service:hover {
     background: #eaeaea; 
     border-radius: 5px;
+}
+
+.button-service-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.button-service {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid #f1543f;
+    color: #f1543f;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.75s;
+}
+.button-service:hover {
+    color: #fff;
+    background-color: #f1543f;
+}
+
+.button-service:active {
+    background-color: #e03c2b;
+    border: 3px solid #e03c2b;
 }
 
 /*--------statistics------------*/
@@ -132,7 +161,7 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #444444;
+    background: #263339;
 }
 .social-img {
     width: 55px;
@@ -260,7 +289,7 @@ h1, h2, h3 {
     width: 450px;
     margin: 0 auto;
 }
-#applicationName, #applicationEmail, #applicationTelephone, #messege {
+#applicationName, #applicationEmail, #applicationTelephone, #applicationMessege {
     width: 100%;
     height: 35px;
     background: #fff;
@@ -271,15 +300,15 @@ h1, h2, h3 {
     color: #263339;
     font-size: 15px;
 }
-#messege {
+#applicationMessege {
     max-width: 450px;
     height: 90px;
     max-height: 90px;
     }
-#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus, #messege:focus { 
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus, #applicationMessege:focus { 
     border: 3px solid #faac47;
 }
-.applicationButton {
+#applicationButton {
     width: 50%;
     margin-top: 15px;
     padding: 5px 15px;
@@ -290,12 +319,13 @@ h1, h2, h3 {
     color: #faac47;
     background-color: #263339;
     font-size: 18px;
+    transition: background-color 0.75s;
 }
-.applicationButton:hover {
+#applicationButton:hover {
     color: #fff;
     background-color: #faac47;
 }
-.applicationButton:active {
+#applicationButton:active {
     background-color: #f9a02c;
     border: 3px solid #f9a02c;
 }
@@ -305,8 +335,8 @@ h1, h2, h3 {
 
 @media screen and (max-width: 1000px){
     #application {width: 300px;}
-    .applicationButton {width: 316px;}
-    #messege {max-width: 300px;}
+    #applicationButton {width: 316px;}
+    #applicationMessege {max-width: 300px;}
     .item-container-service {padding: 10px;}
     .social-img {width: 45px;}
     .number {font-size: 45px;}
@@ -319,8 +349,8 @@ h1, h2, h3 {
     .item-container-service p {font-size: 16px;}
     .contact {flex-direction: column;}
     #application {width: 450px;}
-    .applicationButton {width: 466px;}
-    #messege {max-width: 450px;}
+    #applicationButton {width: 466px;}
+    #applicationMessege {max-width: 450px;}
     .container-form {padding: 5px;}
     .container-contact-item {padding: 5px;}
 }
@@ -334,16 +364,27 @@ h1, h2, h3 {
 }
 @media screen and (max-width: 530px){
     #application {width: 350px;}
-    .applicationButton {width: 366px;}
-    #messege {max-width: 350px;}
+    #applicationButton {width: 366px;}
+    #applicationMessege {max-width: 350px;}
     .item-contact p {font-size: 16px;}
+    .button-service {width: 300px;}
 }
 @media screen and (max-width: 420px){
     #application {width: 250px;}
-    .applicationButton {width: 266px;}
-    #messege {max-width: 250px;}
+    #applicationButton {width: 266px;}
+    #applicationMessege {max-width: 250px;}
     .item-contact p {font-size: 14px;}
     .item-contact img  {width: 50px;padding: 5px;}
     .home-container>h1 {font-size: 55px;}
     .home-container>h3 {font-size: 19px;}
+}
+
+
+.img-like {
+    width: 200px;
+}
+.p-like {
+    font-size: 30px;
+    padding: 5px;
+    color: #fff;
 }

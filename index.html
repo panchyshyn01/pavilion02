@@ -15,8 +15,8 @@
                 <h1> &lt;pavilion&gt;</h1>
                 <h3>Професійна розробка сайтів</h3>
                 <div class="button-home-container">
-                   <a class="button-home" href="#service">Дізнатись більше</a>
-                   <a class="button-home" href="#contact">Замовити сайт</a> 
+                   <a class="button-home smooth" href="#service">Дізнатись більше</a>
+                   <a class="button-home smooth" href="#contact">Замовити сайт</a> 
                 </div>
             </div>
         </section>
@@ -44,6 +44,9 @@
                     <p>Перед запуском проекту проводемо тестування сайту і з точки зору користувача, і з точки зору адміністратора/ и все на сайті відображається відповідно до дизайну і чи коректно працюють всі форми.</p>
                 </div>
             </div>
+            <div class="button-service-container">
+                   <a class="button-service smooth" href="#contact">Зв'язатися з нами</a> 
+                </div>
             <div id="statistics-container">
                 <div class="statistics-client-1">
                     <p class="number">0</p>
@@ -119,17 +122,19 @@
                     </div>
                 </div>
                 <div class="container-form">
-                    <form id="application" action="https://formspree.io/yuriy.panchyshyn01@gmail.com" method="POST">
-                        <input id="applicationName" type="text" name="client-name" placeholder="Name" maxlength="20" required>
-                        <input id="applicationTelephone" type="text" name="client-phone" placeholder="Phone" maxlength="20" required>
-                        <input id="applicationEmail" type="email" name="client-email" placeholder="Email" maxlength="20" required>
-                        <textarea id="messege" name="message" placeholder="Messege" required></textarea>
-                        <button class="applicationButton" type="submit">Send messege</button>
+                    <form id="application">
+                        <input id="applicationName" type="text" placeholder="Name" maxlength="30" required>
+                        <input id="applicationTelephone" type="text" placeholder="Phone" maxlength="20" required>
+                        <input id="applicationEmail" type="email" placeholder="Email" required>
+                        <textarea id="applicationMessege" placeholder="Messege"></textarea>
+                        <button id="applicationButton" type="submit">Send messege</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/form.js"></script>
 </body>
 </html>
