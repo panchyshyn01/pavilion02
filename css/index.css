@@ -3,6 +3,7 @@ body {
     background-color: #fff;
     margin: auto; padding: 0;
     max-width: 1600px;
+    min-width: 320px;
 }
 
 h1, h2, h3 {
@@ -65,7 +66,7 @@ h1, h2, h3 {
 #service h2{
     font-size: 42px;
     text-align: center;
-    color: #18313a;
+    color: #faac47;
     margin: 0; 
     padding: 20px;
 }
@@ -113,20 +114,15 @@ h1, h2, h3 {
     border-radius: 4px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 3px solid #f1543f;
-    color: #f1543f;
+    border: 3px solid #f9a02c;
+    color: #f9a02c;
     font-size: 20px;
     text-align: center;
     transition: background-color 0.5s;
 }
 .button-service:hover {
     color: #fff;
-    background-color: #f1543f;
-}
-
-.button-service:active {
-    background-color: #e03c2b;
-    border: 3px solid #e03c2b;
+    background-color: #f9a02c;
 }
 
 /*--------statistics------------*/
@@ -245,7 +241,7 @@ h1, h2, h3 {
 #contact h2{
     font-size: 42px;
     text-align: center;
-    color: #ffd05b;
+    color: #faac47;
     margin: 0; 
     padding: 20px;
 }
@@ -292,7 +288,7 @@ h1, h2, h3 {
     width: 450px;
     margin: 0 auto;
 }
-#applicationName, #applicationEmail, #applicationTelephone, #applicationMessege {
+#applicationName, #applicationEmail, #applicationTelephone, #applicationMassege {
     width: 100%;
     height: 35px;
     background: #fff;
@@ -303,12 +299,12 @@ h1, h2, h3 {
     color: #263339;
     font-size: 15px;
 }
-#applicationMessege {
+#applicationMassege {
     max-width: 450px;
     height: 90px;
     max-height: 90px;
     }
-#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus, #applicationMessege:focus { 
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus, #applicationMassege:focus { 
     border: 3px solid #faac47;
 }
 #applicationButton {
@@ -334,12 +330,47 @@ h1, h2, h3 {
 }
 
 
+/*--------thank------------*/
+#hidden {
+    display: none;
+}
+
+.thank {
+    width: 450px; height: 365px;
+    background-color: #f5f5f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+.thank>h3 {
+    color: #006775;
+    border-radius: 4px;
+    font-size: 28px;
+    margin: 0; padding: 10px;
+}
+.thank>p {
+    font-size: 18px;
+    color: #263339;
+    text-align: center;
+    margin: 0; padding: 10px 25px;
+}
+
+.img-thank {
+    width: 150px;
+    margin: 0; padding: 10px;
+}
+
+
 /*--------madia------------*/
 
 @media screen and (max-width: 1000px){
     #application {width: 300px;}
+    .thank {width: 300px;}
     #applicationButton {width: 316px;}
-    #applicationMessege {max-width: 300px;}
+    #applicationMassege {max-width: 300px;}
     .item-container-service {padding: 10px;}
     .social-img {width: 45px;}
     .number {font-size: 45px;}
@@ -352,8 +383,9 @@ h1, h2, h3 {
     .item-container-service p {font-size: 16px;}
     .contact {flex-direction: column;}
     #application {width: 450px;}
+    .thank {width: 450px;}
     #applicationButton {width: 466px;}
-    #applicationMessege {max-width: 450px;}
+    #applicationMassege {max-width: 450px;}
     .container-form {padding: 5px;}
     .container-contact-item {padding: 5px;}
 }
@@ -367,27 +399,20 @@ h1, h2, h3 {
 }
 @media screen and (max-width: 530px){
     #application {width: 350px;}
+    .thank {width: 350px;}
     #applicationButton {width: 366px;}
-    #applicationMessege {max-width: 350px;}
+    #applicationMassege {max-width: 350px;}
     .item-contact p {font-size: 16px;}
     .button-service {width: 300px;}
 }
 @media screen and (max-width: 420px){
     #application {width: 250px;}
+    .thank {width: 250px;}
     #applicationButton {width: 266px;}
-    #applicationMessege {max-width: 250px;}
+    #applicationMassege {max-width: 250px;}
     .item-contact p {font-size: 14px;}
     .item-contact img  {width: 50px;padding: 5px;}
     .home-container>h1 {font-size: 55px;}
     .home-container>h3 {font-size: 19px;}
 }
 
-
-.img-like {
-    width: 200px;
-}
-.p-like {
-    font-size: 30px;
-    padding: 5px;
-    color: #fff;
-}

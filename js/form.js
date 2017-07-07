@@ -11,12 +11,12 @@ function sentForm(e) {
             name: $('#applicationName').val(),
             phone: $('#applicationTelephone').val(),
             email: $('#applicationEmail').val(),
-            messege: $('#applicationMessege').val()
+            massege: $('#applicationMassege').val()
         },
         dataType: "json"
     })
     .done(function() {
-       $('#application').html('<img src="images/like.svg" class="img-like"><p class="p-like">Надіслено!</p>');
+       $('#application').html($('#thank-container'));
     })
 }
 
